@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --palelue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+}
+h1 {
+  margin-bottom: 10px;
+}
+h1 span {
+  color: var(--gray);
+  font-weight: 300;
+}
+h3 {
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.pink {
+  width: 60px;
+  margin: 50px 0px 40px 0px;
+}
+input {
+  display: flex;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 50px;
+  width: 300px;
+  padding: 15px;
+  margin: 30px;
+  margin-bottom: 10px;
+}
+input::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+input.error {
+  border-color: hsl(354, 100%, 66%);
+}
+input.error::placeholder {
+  color: hsl(354, 100%, 66%);
+}
+button {
+  background-color: var(--blue);
+  color: white;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 15px 45px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+img {
+  width: 500px;
+}
+main {
+  width: 100%;
+  margin: 10px;
+}
+
+footer p {
+  margin-top: 30px;
+  font-size: 10px;
+  color: var(--gray);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--gray);
+}
+i {
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 100%;
+  width: 15px;
+  padding: 5px;
+  color: var(--blue);
+  margin-top: 40px;
+  margin-left: 5px;
+  font-size: 12px;
+}
+form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+small {
+  display: none;
+  color: hsl(354, 100%, 66%);
+  font-style: italic;
+  z-index: 100;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+    margin-bottom: 25px;
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+  }
+  input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    width: -webkit-fill-available;
+    margin: 0 auto;
+  }
+  main img {
+    width: 100%;
+    margin: 40px 0px 50px 0px;
+  }
+
+  footer {
+    margin-top: 10%;
+  }
+  form {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+  form small {
+    width: 100%;
+    z-index: 100;
+    font-size: x-small;
+  }
+  div {
+    width: 100%;
+  }
+}
